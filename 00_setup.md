@@ -2,7 +2,7 @@
 
 First, let's get a copy of the distro, off which we will base our new project. For the sake of simplicity we'll call our new project _example_. After cloning switch right into the directory.
 ```
-$ git clone git@github.com:bseries/distro.git example
+$ git clone https://github.com/bseries/distro.git example
 $ cd example
 ```
 
