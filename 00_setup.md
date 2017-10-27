@@ -8,7 +8,7 @@ $ cd example
 
 The distro comes with a Vagrantfile, used by the [vagrant](https://www.vagrantup.com/) program to boot up a virtual machine (VM) for development purposes. The VM already contains all necessary tools, a web server and a MariaDB database.  
 
-Let's first boot the VM and establish a route so requests to `example.test` will go right into the VM.
+Let's first boot the VM and establish a route so requests to `project.test` will go right into the VM.
 ```
 $ vagrant up
 $ vagrant ssh "hostname -I"
