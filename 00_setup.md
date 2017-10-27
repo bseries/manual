@@ -49,7 +49,7 @@ $ composer require bseries/cms_social
 $ cd -
 ```
 
-Some B-modules contain an `assets` directory, which need to be symlinked into the project's `assets` directory, so files in there can be accessed by the web server. This needs to happen after installing the composer dependencies above and everytime you have added a new B-module.
+Some B-modules contain an `assets` directory, which needs to be symlinked into the project's `assets` directory, so files in there can be accessed by the web server. This needs to happen after installing the composer dependencies above and everytime after you added a new B-module.
 ```
 $ make link-assets
 ```
