@@ -1,19 +1,19 @@
 # Setup
 
-First, let's get a copy of the distro, off which we will base our new project. For the sake of simplicity we'll call our new project _project_. After cloning switch right into the directory.
+First, let's get a copy of the distro, off which we will base our new project. For the sake of simplicity we'll call our new project _example_. After cloning switch right into the directory.
 ```
-$ git clone git@github.com:bseries/distro.git project
-$ cd project
+$ git clone git@github.com:bseries/distro.git example
+$ cd example
 ```
 
 The distro comes with a Vagrantfile, used by the [vagrant](https://www.vagrantup.com/) program to boot up a virtual machine (VM) for development purposes. The VM already contains all necessary tools, a web server and a MariaDB database.  
 
-Let's first boot the VM and establish a route so requests to `project.test` will go right into the VM.
+Let's first boot the VM and establish a route so requests to `example.test` will go right into the VM.
 ```
 $ vagrant up
 $ vagrant ssh "hostname -I"
 10.0.2.15 172.28.128.3
-$ sudo sh -c 'echo "172.28.128.3 project.test" >> /etc/hosts'
+$ sudo sh -c 'echo "172.28.128.3 example.test" >> /etc/hosts'
 ```
 
 The `hostname -I` often returns multiple IP addresses, use the one that looks the most legit to you (usually its the last one).
@@ -65,6 +65,6 @@ $ bin/init-db.sh
 $ bin/li3.php users create Admin admin@example.com secret admin
 ```
 
-**The application is now ready for development**: https://project.test
+**The application is now ready for development**: https://example.test
 
-**The administration panel is available under**: https://project.test/admin/session
+**The administration panel is available under**: https://example.test/admin/session
