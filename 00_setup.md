@@ -62,7 +62,15 @@ $ make app/resources/g11n/cldr
 One of the last steps is to initialize the database create the initial users for the administration panel.
 ```
 $ bin/init-db.sh
+Importing app/libraries/base_core/data/schema.sql into database project
+Importing app/libraries/base_media/data/schema.sql into database project
+
 $ bin/li3.php users create Admin admin@example.com secret admin
+Created user with:
+name     : Admin
+email    : admin@example.com
+password : secret
+role     : admin
 ```
 
 ![admin panel login screenshot](http://b-series.org/assets/v:1+9cc014f/app/img/login.png)
