@@ -11,7 +11,7 @@ The distro comes with a Vagrantfile, used by the [vagrant](https://www.vagrantup
 Let's first boot the VM and establish a route so requests to `project.test` will go right into the VM.
 ```
 $ vagrant up
-$ vagrant ssh hostname -I
+$ vagrant ssh "hostname -I"
 10.0.2.15 172.28.128.3
 $ sudo sh -c 'echo "172.28.128.3 project.test" >> /etc/hosts'
 ```
