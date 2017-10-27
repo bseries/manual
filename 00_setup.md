@@ -13,7 +13,7 @@ Let's first boot the VM and establish a route so requests to `example.test` will
 $ vagrant up
 $ vagrant ssh "hostname -I"
 10.0.2.15 172.28.128.3
-$ sudo sh -c 'echo "172.28.128.3 example.test" >> /etc/hosts'
+$ sudo sh -c 'echo "172.28.128.3 project.test" >> /etc/hosts'
 ```
 
 The `hostname -I` often returns multiple IP addresses, use the one that looks the most legit to you (usually its the last one).
@@ -67,6 +67,6 @@ $ bin/li3.php users create Admin admin@example.com secret admin
 
 ![admin panel login screenshot](http://b-series.org/assets/v:1+9cc014f/app/img/login.png)
 
-**The application is now ready for development**: https://example.test
+**The application is now ready for development**: https://project.test
 
-**Login to the administration panel under**: https://example.test/admin/session
+**Login to the administration panel under**: https://project.test/admin/session
