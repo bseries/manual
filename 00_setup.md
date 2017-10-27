@@ -65,6 +65,8 @@ $ bin/init-db.sh
 $ bin/li3.php users create Admin admin@example.com secret admin
 ```
 
+![admin panel login screenshot](http://b-series.org/assets/v:1+9cc014f/app/img/login.png)
+
 **The application is now ready for development**: https://example.test
 
-**The administration panel is available under**: https://example.test/admin/session
+**Login to the administration panel under**: https://example.test/admin/session
