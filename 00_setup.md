@@ -59,7 +59,7 @@ The B-Series is ready for globalization by default. Internally it uses data from
 $ make app/resources/g11n/cldr
 ```
 
-One of the last steps is to initialize the database create the initial users for the administration panel.
+In the final two steps we will initialize the database table schema and create the initial admin user for the administration panel.
 ```
 $ bin/init-db.sh
 Importing app/libraries/base_core/data/schema.sql into database project
