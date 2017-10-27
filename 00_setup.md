@@ -16,7 +16,7 @@ $ vagrant ssh "hostname -I"
 $ sudo sh -c 'echo "172.28.128.3 project.test" >> /etc/hosts'
 ```
 
-The `hostname -I` often returns multiple IP addresses, use the one that looks the most legit to you (usually its the last one).
+The `hostname -I` command often returns multiple IP addresses, use the one that looks the most legit to you (usually its the last one).
 
 Our development machine is now running nicely, let's continue setting up the project. The outside project has been mounted at `/var/www/project` inside the VM.
 ```
