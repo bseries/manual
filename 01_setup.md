@@ -52,6 +52,10 @@ $ cd -
 Some B-modules contain an `assets` directory, which needs to be symlinked into the project's `assets` directory, so files in there can be accessed by the web server. This needs to happen after installing the composer dependencies above and everytime after you added a new B-module.
 ```
 $ make link-assets
+ln -s ../app/assets assets/app
+ln -s ../app/libraries/base_core/assets assets/base-core
+ln -s ../app/libraries/base_media/assets assets/base-media
+ln -s ../app/libraries/cms_core/assets assets/cms-core
 ```
 
 The B-Series is ready for globalization by default. Internally it uses data from the Unicode Consortium: the CLDR. The globalization data is too extensive to include it with the distro. The following command will download and install it locally.
